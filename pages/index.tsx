@@ -1,6 +1,6 @@
 import type { NextPage } from "next";
 
-import Htag from "../components/Htag/Htag";
+import { Button, Htag } from "../components";
 
 const Home: NextPage = () => {
   return (
@@ -8,6 +8,10 @@ const Home: NextPage = () => {
       <Htag tag="h1">Text</Htag>
       <Htag tag="h2">Text</Htag>
       <Htag tag="h3">Text</Htag>
+      <Button>Click</Button>
+      <Button appearance="ghost" arrow="right">
+        Click
+      </Button>
     </>
   );
 };
