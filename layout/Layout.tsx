@@ -1,5 +1,4 @@
 import { FunctionComponent } from "react";
-import clsx from "clsx";
 
 import { Header } from "./Header/Header";
 import { SideBar } from "./SideBar/SideBar";
@@ -10,14 +9,12 @@ import styles from "./Layout.module.css";
 
 const Layout = ({ children }: LayoutProps) => {
   return (
-    <>
-      <Header />
-      <div>
-        <SideBar />
-        <div>{children}</div>
-      </div>
-      <Footer />
-    </>
+    <div className={styles.wrapper}>
+      <Header className={styles.header} />
+      <SideBar className={styles.sidebar} />
+      <div className={styles.body}>{children}</div>
+      <Footer className={styles.footer} />
+    </div>
   );
 };
 
