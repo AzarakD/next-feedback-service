@@ -1,0 +1,15 @@
+.stars {
+  max-width: fit-content;
+}
+
+.stars span:not(:last-child) {
+  margin-right: 5px;
+}
+
+.filled {
+  fill: var(--primary);
+}
+
+.editable {
+  cursor: pointer;
+}
